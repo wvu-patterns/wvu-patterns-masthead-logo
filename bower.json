@@ -1,0 +1,16 @@
+{
+  "name": "wvu-patterns-masthead-logo",
+  "version": "0.0.1",
+  "authors": [
+    "Dustin Mazon <dustin.mazon@mail.wvu.edu>"
+  ],
+  "description": "WVU Pattern Library - Masthead Logo Module",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
