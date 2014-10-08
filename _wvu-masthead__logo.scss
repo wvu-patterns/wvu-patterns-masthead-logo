@@ -18,7 +18,7 @@ $wvu-masthead-logo-svg-url: '//static.wvu.edu/global/images/logos/wvu/masthead/w
   border: 0;
   overflow: hidden;
   text-indent: -9999px;
-  @media ($wvu-masthead-small-breakpoint) {
+  @media (#{$wvu-masthead-small-breakpoint}) {
     width: 240px;
   }
 }
