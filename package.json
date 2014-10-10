@@ -1,6 +1,6 @@
 {
   "name": "wvu-patterns-masthead-logo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "WVU Pattern Library - Masthead Logo Module",
   "main": "gulpfile.js",
   "scripts": {
