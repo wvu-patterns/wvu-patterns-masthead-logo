@@ -7,7 +7,20 @@ var gulp = require('gulp'),
     del = require("del"),
     runSequence = require('run-sequence'),
     scsslint = require('gulp-scss-lint'),
-    handlebars = require('gulp-compile-handlebars');
+    handlebars = require('gulp-compile-handlebars'),
+    browserSync = require('browser-sync');
+
+
+gulp.task('browser-sync', function() {
+  browserSync({
+    server: {
+      baseDir: "./build/",
+    },
+    open: false,
+    logConnections: true,
+    logSnippet: false
+  });
+});
 
 gulp.task('clean', function(cb){
   del([
@@ -38,7 +51,7 @@ gulp.task('compile', ['scss-lint','compile-scss'], function () {
   var templateData = require('./src/handlebars/data/_wvu-masthead__logo.json');
   var options = {
     batch : [
-      './src/handlebars'
+      './src/handlebars/partials'
     ]
   }
   return gulp.src('./src/handlebars/test/index.hbs')
@@ -52,5 +65,5 @@ gulp.task('build',function(){
 });
 
 
-gulp.task('test',['build']);
+gulp.task('test',['build','browser-sync']);
 gulp.task('ci',['scss-lint']);
