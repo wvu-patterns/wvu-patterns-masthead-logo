@@ -1,15 +1,29 @@
 {
   "name": "wvu-patterns-masthead-logo",
+  "homepage": "https://github.com/wvu-patterns/wvu-patterns-masthead-logo",
   "version": "0.1.0",
   "authors": [
-    "Dustin Mazon <dustin.mazon@mail.wvu.edu>"
+    "Dustin Mazon <dustin.mazon@mail.wvu.edu>",
+    "Steven Spriggs <steven.spriggs@mail.wvu.edu>"
+  ],
+  "keywords": [
+    "wvu",
+    "west virginia university",
+    "patterns"
   ],
   "description": "WVU Pattern Library - Masthead Logo Module",
   "license": "MIT",
+  "main": [
+    "src/cleanslate/_wvu-masthead__logo.html",
+    "src/handlebars/data/_wvu-masthead__logo.json",
+    "src/handlebars/partials/_wvu-masthead__logo.hbs",
+    "src/scss/_wvu-masthead__logo.scss"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "build",
     "test",
     "tests"
   ]
